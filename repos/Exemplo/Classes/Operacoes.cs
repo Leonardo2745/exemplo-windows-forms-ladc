@@ -38,6 +38,7 @@ namespace Exemplo.Classes
         }
 
 
+        //--------------------
 
         public double soma()
         {
@@ -70,6 +71,18 @@ namespace Exemplo.Classes
         public double porcentagem()
         {
             return (this.x * this.y)/100;
+        }
+
+        public int binario()
+        {
+            int num = (int)this.x;
+            
+            return int.Parse(Convert.ToString(num, 2));
+        }
+
+        public double elevado()
+        {
+            return Math.Pow(this.x, this.y);
         }
 
     }
