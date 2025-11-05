@@ -14,7 +14,7 @@ namespace Exemplo
             op = new Operacoes();
         }
 
-      
+
         private void precisaDeCampoY()
         {
             bool usaY = calc == "soma" || calc == "subtracao" || calc == "multiplicacao" || calc == "divisao" || calc == "porcentagem" || calc == "elevado";
@@ -28,7 +28,7 @@ namespace Exemplo
             {
                 inputTextY.Visible = true;
             }
-                
+
         }
 
 
@@ -39,15 +39,15 @@ namespace Exemplo
                 double x = double.Parse(inputTextX.Text);
                 op.setXFromInput(x);
 
-                
-                if (inputTextY.Enabled )
+
+                if (inputTextY.Enabled)
                 {
                     double y = double.Parse(inputTextY.Text);
                     op.setYFromInput(y);
                 }
                 else
                 {
-                    op.setYFromInput(0); 
+                    op.setYFromInput(0);
                 }
 
                 return true;
@@ -55,7 +55,7 @@ namespace Exemplo
             catch
             {
                 labelOutput.Visible = true;
-             
+
                 return false;
             }
         }
@@ -63,30 +63,46 @@ namespace Exemplo
         public void printResult(double x, double y, string operacao, double result)
         {
             string formatoSaida;
+            string resultado;
 
             if (calc == "soma" || calc == "subtracao" || calc == "multiplicacao" ||
                 calc == "divisao" || calc == "porcentagem" || calc == "elevado")
             {
-                formatoSaida ="Resultado da" + operacao + "entre " + x + " e " + y + "é igual a: " + result;
+                formatoSaida = x + operacao + y;
+                resultado = " " + result + " ";
+            }
+            else if (calc == "quadrado")
+            {
+                formatoSaida = x + operacao;
+                resultado = " " + result + " ";
+            }
+            else if (calc == "raiz")
+            {
+                formatoSaida = operacao + x;
+                resultado = " " + result + " ";
             }
             else
             {
-                formatoSaida = "Resultado da" + operacao + " de " + x + " é: " + result;
+                formatoSaida = x + operacao;
+                resultado = " " + result + " ";
             }
+            
 
+            labelResult.Visible = true;
             labelOutput.Visible = true;
             labelOutput.Text = formatoSaida;
+            labelResult.Text = resultado;
         }
 
-        
+
         private void btnSoma_Click(object sender, EventArgs e)
         {
-            calc = "soma"; 
+            calc = "soma";
             precisaDeCampoY();
             if (!setInputs()) return;
 
             double result = op.soma();
-            printResult(op.getX(), op.getY(), "soma", result);
+            printResult(op.getX(), op.getY(), " + ", result);
         }
 
         private void btnSub_Click(object sender, EventArgs e)
@@ -96,7 +112,7 @@ namespace Exemplo
             if (!setInputs()) return;
 
             double result = op.subtracao();
-            printResult(op.getX(), op.getY(), "subtração", result);
+            printResult(op.getX(), op.getY(), " - ", result);
         }
 
         private void btnMult_Click(object sender, EventArgs e)
@@ -106,7 +122,7 @@ namespace Exemplo
             if (!setInputs()) return;
 
             double result = op.multi();
-            printResult(op.getX(), op.getY(), "multiplicação", result);
+            printResult(op.getX(), op.getY(), " * ", result);
         }
 
         private void btnDiv_Click(object sender, EventArgs e)
@@ -116,7 +132,7 @@ namespace Exemplo
             if (!setInputs()) return;
 
             double result = op.divisao();
-            printResult(op.getX(), op.getY(), "divisão", result);
+            printResult(op.getX(), op.getY(), " / ", result);
         }
 
         private void btnQuad_Click(object sender, EventArgs e)
@@ -126,7 +142,7 @@ namespace Exemplo
             if (!setInputs()) return;
 
             double result = op.quadrado();
-            printResult(op.getX(), op.getY(), "quadrado", result);
+            printResult(op.getX(), op.getY(), "²", result);
         }
 
         private void btnRaiz_Click(object sender, EventArgs e)
@@ -136,7 +152,7 @@ namespace Exemplo
             if (!setInputs()) return;
 
             double result = op.raiz();
-            printResult(op.getX(), op.getY(), "raiz quadrada", result);
+            printResult(op.getX(), op.getY(), "√", result);
         }
 
         private void btnPorc_Click(object sender, EventArgs e)
@@ -146,7 +162,7 @@ namespace Exemplo
             if (!setInputs()) return;
 
             double result = op.porcentagem();
-            printResult(op.getX(), op.getY(), "porcentagem", result);
+            printResult(op.getX(), op.getY(), " % ", result);
         }
 
         private void btnBin_Click(object sender, EventArgs e)
@@ -156,17 +172,27 @@ namespace Exemplo
             if (!setInputs()) return;
 
             double result = op.binario();
-            printResult(op.getX(), op.getY(), "binário", result);
+            printResult(op.getX(), op.getY(), "(b)", result);
         }
 
         private void btnElev_Click(object sender, EventArgs e)
         {
-            calc = "elevado"; 
+            calc = "elevado";
 
             if (!setInputs()) return;
 
             double result = op.elevado();
-            printResult(op.getX(), op.getY(), "elevado", result);
+            printResult(op.getX(), op.getY(), "^", result);
+        }
+
+        private void labelResult_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\workspace\\exemplo-windows-forms-ladc\\repos\\Exemplo\\Exemplo.csproj": {}
+    "C:\\Users\\aluno.senai.pjcn\\workspace\\exemplo-windows-forms-ladc\\repos\\Exemplo\\Exemplo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\workspace\\exemplo-windows-forms-ladc\\repos\\Exemplo\\Exemplo.csproj": {
+    "C:\\Users\\aluno.senai.pjcn\\workspace\\exemplo-windows-forms-ladc\\repos\\Exemplo\\Exemplo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\workspace\\exemplo-windows-forms-ladc\\repos\\Exemplo\\Exemplo.csproj",
+        "projectUniqueName": "C:\\Users\\aluno.senai.pjcn\\workspace\\exemplo-windows-forms-ladc\\repos\\Exemplo\\Exemplo.csproj",
         "projectName": "Exemplo",
-        "projectPath": "C:\\Users\\User\\workspace\\exemplo-windows-forms-ladc\\repos\\Exemplo\\Exemplo.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\workspace\\exemplo-windows-forms-ladc\\repos\\Exemplo\\obj\\",
+        "projectPath": "C:\\Users\\aluno.senai.pjcn\\workspace\\exemplo-windows-forms-ladc\\repos\\Exemplo\\Exemplo.csproj",
+        "packagesPath": "C:\\Users\\aluno.senai.pjcn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aluno.senai.pjcn\\workspace\\exemplo-windows-forms-ladc\\repos\\Exemplo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aluno.senai.pjcn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
