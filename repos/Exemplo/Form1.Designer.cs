@@ -45,13 +45,14 @@
             button1 = new Button();
             button2 = new Button();
             labelResult = new Label();
+            btnReset = new Button();
             SuspendLayout();
             // 
             // inputTextX
             // 
             inputTextX.Location = new Point(86, 107);
             inputTextX.Name = "inputTextX";
-            inputTextX.Size = new Size(118, 31);
+            inputTextX.Size = new Size(182, 31);
             inputTextX.TabIndex = 1;
             // 
             // labelTitle
@@ -74,13 +75,13 @@
             labelOutput.BackColor = Color.FromArgb(40, 42, 54);
             labelOutput.ForeColor = Color.White;
             labelOutput.Location = new Point(378, 65);
-            labelOutput.MaximumSize = new Size(400, 350);
-            labelOutput.MinimumSize = new Size(400, 350);
+            labelOutput.MaximumSize = new Size(400, 300);
+            labelOutput.MinimumSize = new Size(400, 300);
             labelOutput.Name = "labelOutput";
             labelOutput.Padding = new Padding(10);
-            labelOutput.Size = new Size(400, 350);
+            labelOutput.Size = new Size(400, 300);
             labelOutput.TabIndex = 8;
-            labelOutput.Text = "...";
+            labelOutput.Text = "0";
             labelOutput.TextAlign = ContentAlignment.TopRight;
             labelOutput.Visible = false;
             // 
@@ -88,7 +89,7 @@
             // 
             inputTextY.Location = new Point(86, 167);
             inputTextY.Name = "inputTextY";
-            inputTextY.Size = new Size(118, 31);
+            inputTextY.Size = new Size(182, 31);
             inputTextY.TabIndex = 2;
             // 
             // labelX
@@ -118,7 +119,7 @@
             labelTitleResult.AutoSize = true;
             labelTitleResult.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             labelTitleResult.ForeColor = Color.Coral;
-            labelTitleResult.Location = new Point(536, 8);
+            labelTitleResult.Location = new Point(527, 9);
             labelTitleResult.Name = "labelTitleResult";
             labelTitleResult.Size = new Size(111, 45);
             labelTitleResult.TabIndex = 7;
@@ -259,12 +260,25 @@
             labelResult.BackColor = Color.FromArgb(40, 42, 54);
             labelResult.Font = new Font("Segoe UI", 20F);
             labelResult.ForeColor = Color.Coral;
-            labelResult.Location = new Point(562, 213);
+            labelResult.Location = new Point(473, 190);
             labelResult.Name = "labelResult";
-            labelResult.Size = new Size(50, 54);
+            labelResult.Size = new Size(221, 54);
             labelResult.TabIndex = 7;
-            labelResult.Text = "...";
+            labelResult.Text = "000000000";
             labelResult.Visible = false;
+            // 
+            // btnReset
+            // 
+            btnReset.BackColor = Color.Coral;
+            btnReset.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnReset.ForeColor = SystemColors.Control;
+            btnReset.Location = new Point(504, 386);
+            btnReset.Name = "btnReset";
+            btnReset.Size = new Size(159, 46);
+            btnReset.TabIndex = 17;
+            btnReset.Text = "Reset";
+            btnReset.UseVisualStyleBackColor = false;
+            btnReset.Click += btnReset_Click;
             // 
             // Form1
             // 
@@ -272,6 +286,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(62, 83, 102);
             ClientSize = new Size(800, 450);
+            Controls.Add(btnReset);
             Controls.Add(labelResult);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -293,7 +308,6 @@
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -317,5 +331,6 @@
         private Button button1;
         private Button button2;
         private Label labelResult;
+        private Button btnReset;
     }
 }

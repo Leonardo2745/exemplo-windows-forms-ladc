@@ -65,21 +65,39 @@ namespace Exemplo.Classes
         }
         public double raiz()
         {
-            return Math.Sqrt(this.x);
+            return Math.Round(Math.Sqrt(this.x));
         }
 
         public double porcentagem()
         {
-            return (this.x * this.y)/100;
+            return (this.x / 100) * this.y;
         }
 
         public int binario()
         {
-            int num = (int)this.x;
-            
-            return int.Parse(Convert.ToString(num, 2));
-        }
+            long value = (long)this.x;
 
+            if (value <= 0)
+            {
+                return 0000;
+            }
+            else
+            {
+                string resultado = "";
+
+                while (value > 0)
+                {
+                    long resto = value % 2;
+
+                    value /= 2;
+
+                    resultado += (resto == 0) ? 1 : 0;
+
+                }
+                return int.Parse(resultado);
+
+            }
+        }
         public double elevado()
         {
             return Math.Pow(this.x, this.y);

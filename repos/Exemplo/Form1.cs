@@ -86,7 +86,7 @@ namespace Exemplo
                 formatoSaida = x + operacao;
                 resultado = " " + result + " ";
             }
-            
+
 
             labelResult.Visible = true;
             labelOutput.Visible = true;
@@ -185,7 +185,13 @@ namespace Exemplo
             printResult(op.getX(), op.getY(), "^", result);
         }
 
-       
-        
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            inputTextX.Text = "";
+            inputTextY.Text = "";
+            labelOutput.Text = "0";
+            labelResult.Text = "000000000";
+
+        }
     }
 }
