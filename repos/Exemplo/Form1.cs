@@ -90,8 +90,8 @@ namespace Exemplo
 
             labelResult.Visible = true;
             labelOutput.Visible = true;
-            labelOutput.Text = formatoSaida;
-            labelResult.Text = resultado;
+            labelOutput.Text = resultado;
+            labelResult.Text = formatoSaida;
         }
 
 
@@ -178,7 +178,7 @@ namespace Exemplo
         private void btnElev_Click(object sender, EventArgs e)
         {
             calc = "elevado";
-
+            precisaDeCampoY();
             if (!setInputs()) return;
 
             double result = op.elevado();
@@ -190,7 +190,22 @@ namespace Exemplo
             inputTextX.Text = "";
             inputTextY.Text = "";
             labelOutput.Text = "0";
-            labelResult.Text = "000000000";
+            labelResult.Text = "0";
+
+        }
+
+        private void inputTextY_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelOutput_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelResult_Click(object sender, EventArgs e)
+        {
 
         }
     }

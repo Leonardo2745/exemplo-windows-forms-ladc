@@ -56,7 +56,7 @@ namespace Exemplo.Classes
         }
         public double divisao()
         {
-            return this.x / this.y;
+            return Math.Round((this.x / this.y),5);
         }
 
         public double quadrado()
@@ -65,7 +65,7 @@ namespace Exemplo.Classes
         }
         public double raiz()
         {
-            return (Math.Sqrt(this.x));
+            return Math.Round(Math.Sqrt(this.x), 5);
         }
 
         public double porcentagem()
@@ -97,12 +97,20 @@ namespace Exemplo.Classes
                 {
                     resultadoBinario += restos[i];
                 }
-                return double.Parse(resultadoBinario);
+                return int.Parse(resultadoBinario);
             }
         }
         public double elevado()
         {
-            return Math.Pow(this.x, this.y);
+            int count = 0;
+            double result = this.x;
+            while(count < this.y-1)
+            {
+                result += this.y;
+                count++;
+
+            }
+            return result;
         }
 
     }
