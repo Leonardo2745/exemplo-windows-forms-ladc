@@ -54,11 +54,12 @@
             labelTitle.AutoSize = true;
             labelTitle.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             labelTitle.ForeColor = Color.Lime;
-            labelTitle.Location = new Point(86, 25);
-            labelTitle.MaximumSize = new Size(180, 65);
-            labelTitle.MinimumSize = new Size(180, 65);
+            labelTitle.Location = new Point(60, 15);
+            labelTitle.Margin = new Padding(2, 0, 2, 0);
+            labelTitle.MaximumSize = new Size(126, 39);
+            labelTitle.MinimumSize = new Size(126, 39);
             labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(180, 65);
+            labelTitle.Size = new Size(126, 39);
             labelTitle.TabIndex = 0;
             labelTitle.Text = "Calculator";
             // 
@@ -69,12 +70,13 @@
             labelOutput.BackColor = Color.FromArgb(64, 64, 64);
             labelOutput.Font = new Font("Segoe UI", 30F);
             labelOutput.ForeColor = Color.LawnGreen;
-            labelOutput.Location = new Point(378, 65);
-            labelOutput.MaximumSize = new Size(400, 300);
-            labelOutput.MinimumSize = new Size(400, 300);
+            labelOutput.Location = new Point(265, 39);
+            labelOutput.Margin = new Padding(2, 0, 2, 0);
+            labelOutput.MaximumSize = new Size(280, 180);
+            labelOutput.MinimumSize = new Size(280, 180);
             labelOutput.Name = "labelOutput";
-            labelOutput.Padding = new Padding(10);
-            labelOutput.Size = new Size(400, 300);
+            labelOutput.Padding = new Padding(7, 6, 7, 6);
+            labelOutput.Size = new Size(280, 180);
             labelOutput.TabIndex = 8;
             labelOutput.Text = "0";
             labelOutput.TextAlign = ContentAlignment.MiddleCenter;
@@ -85,9 +87,10 @@
             labelX.AutoSize = true;
             labelX.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             labelX.ForeColor = Color.Lime;
-            labelX.Location = new Point(31, 93);
+            labelX.Location = new Point(22, 56);
+            labelX.Margin = new Padding(2, 0, 2, 0);
             labelX.Name = "labelX";
-            labelX.Size = new Size(50, 45);
+            labelX.Size = new Size(33, 30);
             labelX.TabIndex = 5;
             labelX.Text = "X:";
             // 
@@ -96,9 +99,10 @@
             labelY.AutoSize = true;
             labelY.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             labelY.ForeColor = Color.Lime;
-            labelY.Location = new Point(31, 153);
+            labelY.Location = new Point(22, 92);
+            labelY.Margin = new Padding(2, 0, 2, 0);
             labelY.Name = "labelY";
-            labelY.Size = new Size(48, 45);
+            labelY.Size = new Size(32, 30);
             labelY.TabIndex = 6;
             labelY.Text = "Y:";
             // 
@@ -107,9 +111,10 @@
             labelTitleResult.AutoSize = true;
             labelTitleResult.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             labelTitleResult.ForeColor = Color.Lime;
-            labelTitleResult.Location = new Point(527, 9);
+            labelTitleResult.Location = new Point(369, 5);
+            labelTitleResult.Margin = new Padding(2, 0, 2, 0);
             labelTitleResult.Name = "labelTitleResult";
-            labelTitleResult.Size = new Size(111, 45);
+            labelTitleResult.Size = new Size(76, 30);
             labelTitleResult.TabIndex = 7;
             labelTitleResult.Text = "Result";
             // 
@@ -121,9 +126,10 @@
             btnSoma.FlatStyle = FlatStyle.Flat;
             btnSoma.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             btnSoma.ForeColor = Color.Lime;
-            btnSoma.Location = new Point(50, 221);
+            btnSoma.Location = new Point(35, 133);
+            btnSoma.Margin = new Padding(2, 2, 2, 2);
             btnSoma.Name = "btnSoma";
-            btnSoma.Size = new Size(61, 63);
+            btnSoma.Size = new Size(43, 38);
             btnSoma.TabIndex = 8;
             btnSoma.TabStop = false;
             btnSoma.Text = "+";
@@ -136,9 +142,10 @@
             btnSub.FlatStyle = FlatStyle.Flat;
             btnSub.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             btnSub.ForeColor = Color.Lime;
-            btnSub.Location = new Point(146, 221);
+            btnSub.Location = new Point(102, 133);
+            btnSub.Margin = new Padding(2, 2, 2, 2);
             btnSub.Name = "btnSub";
-            btnSub.Size = new Size(61, 63);
+            btnSub.Size = new Size(43, 38);
             btnSub.TabIndex = 9;
             btnSub.Text = "-";
             btnSub.UseVisualStyleBackColor = false;
@@ -150,9 +157,10 @@
             btnMult.FlatStyle = FlatStyle.Flat;
             btnMult.Font = new Font("Segoe UI", 14F);
             btnMult.ForeColor = Color.Lime;
-            btnMult.Location = new Point(239, 221);
+            btnMult.Location = new Point(167, 133);
+            btnMult.Margin = new Padding(2, 2, 2, 2);
             btnMult.Name = "btnMult";
-            btnMult.Size = new Size(61, 63);
+            btnMult.Size = new Size(43, 38);
             btnMult.TabIndex = 10;
             btnMult.Text = "x";
             btnMult.UseVisualStyleBackColor = false;
@@ -164,9 +172,10 @@
             btnDiv.FlatStyle = FlatStyle.Flat;
             btnDiv.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             btnDiv.ForeColor = Color.Lime;
-            btnDiv.Location = new Point(50, 290);
+            btnDiv.Location = new Point(35, 174);
+            btnDiv.Margin = new Padding(2, 2, 2, 2);
             btnDiv.Name = "btnDiv";
-            btnDiv.Size = new Size(61, 63);
+            btnDiv.Size = new Size(43, 38);
             btnDiv.TabIndex = 11;
             btnDiv.Text = "/";
             btnDiv.UseVisualStyleBackColor = false;
@@ -178,9 +187,10 @@
             btnQuad.FlatStyle = FlatStyle.Flat;
             btnQuad.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             btnQuad.ForeColor = Color.Lime;
-            btnQuad.Location = new Point(146, 290);
+            btnQuad.Location = new Point(102, 174);
+            btnQuad.Margin = new Padding(2, 2, 2, 2);
             btnQuad.Name = "btnQuad";
-            btnQuad.Size = new Size(61, 63);
+            btnQuad.Size = new Size(43, 38);
             btnQuad.TabIndex = 12;
             btnQuad.Text = "x²";
             btnQuad.UseVisualStyleBackColor = false;
@@ -192,9 +202,10 @@
             btnRaiz.FlatStyle = FlatStyle.Flat;
             btnRaiz.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnRaiz.ForeColor = Color.Lime;
-            btnRaiz.Location = new Point(239, 292);
+            btnRaiz.Location = new Point(167, 175);
+            btnRaiz.Margin = new Padding(2, 2, 2, 2);
             btnRaiz.Name = "btnRaiz";
-            btnRaiz.Size = new Size(61, 63);
+            btnRaiz.Size = new Size(43, 38);
             btnRaiz.TabIndex = 13;
             btnRaiz.Text = "√";
             btnRaiz.UseVisualStyleBackColor = false;
@@ -206,9 +217,10 @@
             btnMod.FlatStyle = FlatStyle.Flat;
             btnMod.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnMod.ForeColor = Color.Lime;
-            btnMod.Location = new Point(50, 359);
+            btnMod.Location = new Point(35, 215);
+            btnMod.Margin = new Padding(2, 2, 2, 2);
             btnMod.Name = "btnMod";
-            btnMod.Size = new Size(61, 63);
+            btnMod.Size = new Size(43, 38);
             btnMod.TabIndex = 14;
             btnMod.Text = "%";
             btnMod.UseVisualStyleBackColor = false;
@@ -220,9 +232,10 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button1.ForeColor = Color.Lime;
-            button1.Location = new Point(146, 361);
+            button1.Location = new Point(102, 217);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(61, 63);
+            button1.Size = new Size(43, 38);
             button1.TabIndex = 15;
             button1.Text = "010";
             button1.UseVisualStyleBackColor = false;
@@ -234,9 +247,10 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button2.ForeColor = Color.Lime;
-            button2.Location = new Point(239, 361);
+            button2.Location = new Point(167, 217);
+            button2.Margin = new Padding(2, 2, 2, 2);
             button2.Name = "button2";
-            button2.Size = new Size(61, 63);
+            button2.Size = new Size(43, 38);
             button2.TabIndex = 16;
             button2.Text = "x^y";
             button2.UseVisualStyleBackColor = false;
@@ -248,9 +262,10 @@
             labelResult.BackColor = Color.FromArgb(64, 64, 64);
             labelResult.Font = new Font("Segoe UI", 12F);
             labelResult.ForeColor = Color.Lime;
-            labelResult.Location = new Point(657, 75);
+            labelResult.Location = new Point(460, 45);
+            labelResult.Margin = new Padding(2, 0, 2, 0);
             labelResult.Name = "labelResult";
-            labelResult.Size = new Size(27, 32);
+            labelResult.Size = new Size(19, 21);
             labelResult.TabIndex = 7;
             labelResult.Text = "0";
             labelResult.TextAlign = ContentAlignment.MiddleLeft;
@@ -263,9 +278,10 @@
             btnReset.FlatStyle = FlatStyle.Flat;
             btnReset.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnReset.ForeColor = Color.Lime;
-            btnReset.Location = new Point(500, 378);
+            btnReset.Location = new Point(350, 227);
+            btnReset.Margin = new Padding(2, 2, 2, 2);
             btnReset.Name = "btnReset";
-            btnReset.Size = new Size(159, 46);
+            btnReset.Size = new Size(111, 28);
             btnReset.TabIndex = 17;
             btnReset.Text = "Reset";
             btnReset.UseVisualStyleBackColor = false;
@@ -277,11 +293,12 @@
             inputTextY.BorderStyle = BorderStyle.FixedSingle;
             inputTextY.Font = new Font("Segoe UI", 12F);
             inputTextY.ForeColor = Color.Lime;
-            inputTextY.Location = new Point(85, 158);
-            inputTextY.MaximumSize = new Size(180, 30);
-            inputTextY.MinimumSize = new Size(180, 40);
+            inputTextY.Location = new Point(60, 95);
+            inputTextY.Margin = new Padding(2, 2, 2, 2);
+            inputTextY.MaximumSize = new Size(127, 30);
+            inputTextY.MinimumSize = new Size(127, 40);
             inputTextY.Name = "inputTextY";
-            inputTextY.Size = new Size(180, 40);
+            inputTextY.Size = new Size(127, 29);
             inputTextY.TabIndex = 2;
             inputTextY.TextAlign = HorizontalAlignment.Center;
             inputTextY.TextChanged += inputTextY_TextChanged;
@@ -292,11 +309,12 @@
             inputTextX.BorderStyle = BorderStyle.FixedSingle;
             inputTextX.Font = new Font("Segoe UI", 12F);
             inputTextX.ForeColor = Color.Lime;
-            inputTextX.Location = new Point(85, 98);
-            inputTextX.MaximumSize = new Size(180, 30);
-            inputTextX.MinimumSize = new Size(180, 40);
+            inputTextX.Location = new Point(60, 59);
+            inputTextX.Margin = new Padding(2, 2, 2, 2);
+            inputTextX.MaximumSize = new Size(127, 30);
+            inputTextX.MinimumSize = new Size(127, 40);
             inputTextX.Name = "inputTextX";
-            inputTextX.Size = new Size(180, 40);
+            inputTextX.Size = new Size(127, 29);
             inputTextX.TabIndex = 18;
             inputTextX.TextAlign = HorizontalAlignment.Center;
             // 
@@ -305,18 +323,19 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 6F);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(693, 426);
+            label1.Location = new Point(485, 256);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(85, 15);
+            label1.Size = new Size(58, 11);
             label1.TabIndex = 19;
             label1.Text = "© Leonardo A.";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(560, 270);
             Controls.Add(label1);
             Controls.Add(inputTextX);
             Controls.Add(btnReset);
@@ -337,9 +356,11 @@
             Controls.Add(labelOutput);
             Controls.Add(labelTitle);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -181,6 +181,8 @@ namespace Exemplo
             precisaDeCampoY();
             if (!setInputs()) return;
 
+
+
             double result = op.elevado();
             printResult(op.getX(), op.getY(), "^", result);
         }
@@ -205,6 +207,11 @@ namespace Exemplo
         }
 
         private void labelResult_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
